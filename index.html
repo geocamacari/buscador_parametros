@@ -36,7 +36,7 @@
         }
     </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-purple-200 text-purple-800">
 
     <div class="container mx-auto p-4 sm:p-6 md:p-8">
         <header class="text-center mb-8">
@@ -50,13 +50,13 @@
             <div class="bg-white p-6 rounded-2xl shadow-lg mb-8">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                        <label for="zone-select" class="block text-sm font-medium text-gray-700 mb-2">1. Selecione a Zona</label>
+                        <label for="zone-select" class="block text-sm font-medium text-gray-700 mb-2"><strong>1. Selecione a Zona</strong></label>
                         <select id="zone-select" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition">
                             <option value="">-- Escolha uma zona --</option>
                         </select>
                     </div>
                     <div>
-                        <label for="land-use-select" class="block text-sm font-medium text-gray-700 mb-2">2. Selecione o Uso do Solo</label>
+                        <label for="land-use-select" class="block text-sm font-medium text-gray-700 mb-2"><strong>2. Selecione o Uso do Solo</strong></label>
                         <select id="land-use-select" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition" disabled>
                             <option value="">-- Aguardando seleção da zona --</option>
                         </select>
@@ -92,7 +92,7 @@
                 </div>
 
                 <!-- Botões de Exportação -->
-                <div id="export-buttons" class="mt-8 pt-6 border-t border-gray-200 flex flex-col sm:flex-row gap-4">
+                <div id="export-buttons" class="mt-8 pt-6 border-t border-purple-300 flex flex-col sm:flex-row gap-4">
                     <button id="export-pdf-btn" class="w-full sm:w-auto flex-1 inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition">
                         <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
                         Exportar para PDF
@@ -115,12 +115,19 @@
 
         </main>
     </div>
-
-    <footer class="text-center mt-12 mb-6 text-xs text-gray-600 px-4">
-        <p class="font-bold">Buscador Interativo Online do Código Urbanístico de Camaçari-Ba (2025)</p>
+<div class="container mx-auto p-4 sm:p-6 md:p-8">
+ <h2 class="text-2xl font-bold text-gray-900 mb-4">Legislação Municipal Básica</h2>
+ <ul class="list-disc list-inside space-y-2 text-gray-700">
+ <li><a href="https://www.camacari.ba.gov.br/wp-content/uploads/2023/12/diario-2290-2o-caderno-certificado.pdf" target="_blank">Lei Complementar nº1873/2023 (PDDU-S):</a> A lei mais importante, que define a visão de desenvolvimento para Camaçari e estabelece o Macrozoneamento (divisão geral do território), as Macroáreas (características regionais) e as Zonas Urbanísticas (regras específicas de uso e ocupação). Também institui o SAVAM.</li>
+ <li><a href="https://www.camacari.ba.gov.br/wp-content/uploads/2023/12/diario-2290-3o-caderno-certificado.pdf" target="_blank">Lei Complementar nº1874/2023 (Código Urbanístico):</a> Detalha os parâmetros urbanísticos para cada Zona (Quadros 01 a 09B do Anexo II), as regras para parcelamento do solo (loteamentos, condomínios), define os instrumentos de política urbana (EIV, RIT, Outorga Onerosa, etc.) e os casos de obrigatoriedade da Consulta Prévia.</li>
+ <li><a href="https://www.camacari.ba.gov.br/wp-content/uploads/2023/12/diario-2290-4o-certificado.pdf" target="_blank">Lei Complementar nº1875/2023 (Código de Obras e Edificações):</a> Institui formalmente a Consulta Prévia (Art.22) e regula os procedimentos para licenciamento e execução de obras.</li>
+ <li><a href="https://www.camacari.ba.gov.br/wp-content/uploads/2024/02/diario-2324-2o-caderno-certificado.pdf" target="_blank">Lei Complementar nº1876/2023 (Código de Meio Ambiente):</a> Define o enquadramento ambiental das atividades (porte, potencial poluidor), as modalidades de licenciamento ambiental (LAS, Trifásico, Inexigibilidade) e as regras para proteção ambiental.</li>
+ </ul>
+</div>
+    <footer class="text-center mt-12 mb-6 text-xs text-orange-600 px-4">
+        <p class="font-bold">Visualizador Interativo Online do Código Urbanístico de Camaçari-Ba (2025)</p>
         <div class="mt-3 space-y-1">
             <p class="font-semibold">REALIZAÇÃO:</p>
-            <p>Fábio Moura Costa – Urbanista e Msc. em Geografia</p>
             <p>Coordenadoria de Planejamento e Projetos (CPP)</p>
             <p>Diretoria de Urbanismo (DIRURB)</p>
             <p>Secretaria de Desenvolvimento Urbano e Meio Ambiente (SEDUR) / PMC</p>
